@@ -7,7 +7,7 @@ function calcularPrecio (precioPrenda, cantidadPrenda, porcentajeDescuento, cost
     let descuento = (precioPrenda * porcentajeDescuento) / 100;
     //se lo aplico al precio
     let precioConDescuento = precioPrenda - descuento;
-    //retorno el precio final con impuestos y cargos, multiplicado por la cantidad de pasajeros
+    //retorno el precio final con descuento y costo de envio, multiplicado por la cantidad de prendas
     return (precioConDescuento * cantidadPrenda) + costoEnvio;
 }
 
